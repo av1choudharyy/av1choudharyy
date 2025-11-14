@@ -15,9 +15,11 @@ Beejho is revolutionizing how restaurants operate with:
 
 **Tech Stack**: React • Node.js • Express • PostgreSQL • AWS Bedrock • Vector Embeddings
 
-🔗 **Beejho Repositories** (Private - working with restaurant partners):
-- [Beejho-Backend](https://github.com/Beejho/Beejho-Backend) - Node.js/Express backend with AWS integration
-- [Beejho-UI](https://github.com/Beejho/Beejho-UI) - Modern React dashboard
+🔗 **Early Iterations** (Archived - refactoring for production):
+- [Beejho-Backend](https://github.com/Beejho/Beejho-Backend) - Initial POC with Node.js/Express + AWS
+- [Beejho-UI](https://github.com/Beejho/Beejho-UI) - First iteration React dashboard
+
+*Currently rebuilding with enhanced architecture based on pilot feedback and scalability requirements.*
 
 ---
 
@@ -83,27 +85,7 @@ Beejho is revolutionizing how restaurants operate with:
 
 ## 🎯 Current Focus
 
-- 🔨 Building Beejho's AI recommendation engine and analytics pipeline
-- 📚 Scaling from pilot to production with restaurant partners
-- 🌱 Exploring advanced ML techniques for demand forecasting
-- 💡 Solving real-world problems in restaurant operations
-
----
-
-## 📊 GitHub Stats
-
-![Abhishek's GitHub stats](https://github-readme-stats.vercel.app/api?username=av1choudharyy&show_icons=true&theme=radical&hide_border=true&count_private=true)
-
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=av1choudharyy&layout=compact&theme=radical&hide_border=true)
-
----
-
-<div align="center">
-
-### 💬 Open to Collaboration
-
-Interested in AI, SaaS, or restaurant tech? Let's connect!
-
-**"Building technology that solves real problems, one restaurant at a time."**
-
-</div>
+- 🔨 Rebuilding Beejho's architecture for production scalability
+- 📚 Implementing AI recommendation engine with AWS Bedrock
+- 🌱 Developing predictive analytics for inventory and demand forecasting
+- 💡 Scaling from pilot restaurants to wider deployment
