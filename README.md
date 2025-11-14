@@ -17,9 +17,9 @@ Beejho is revolutionizing how restaurants operate with:
 
 🔗 **Early Iterations** (Archived - refactoring for production):
 - [Beejho-Backend](https://github.com/Beejho/Beejho-Backend) - Initial POC with Node.js/Express + AWS
-- [Beejho-UI](https://github.com/Beejho/Beejho-UI) - First iteration React dashboard
+- [Beejho-UI](https://github.com/Beejho/Beejho-UI) - First iteration for online menu management
 
-*Currently rebuilding with enhanced architecture based on pilot feedback and scalability requirements.*
+*Currently rebuilding with enhanced architecture for full restaurant management platform based on pilot feedback and scalability requirements.*
 
 ---
 
