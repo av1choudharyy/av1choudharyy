@@ -1,6 +1,6 @@
 # Hi there, I'm Abhishek Choudhary 👋
 
-## 🚀 Founder & CEO [@Beejho](https://github.com/Beejho) | Senior Software Engineer
+## 🚀 Founder [@Beejho](https://github.com/Beejho) | Senior Software Engineer
 
 Currently building **Beejho** - an AI-powered restaurant management platform that helps restaurants optimize operations, increase revenue, and make data-driven decisions.
 
@@ -26,7 +26,7 @@ Beejho is revolutionizing how restaurants operate with:
 ## 💼 Professional Experience
 
 ### 🎯 Current
-**Founder & CEO** at [Beejho](https://github.com/Beejho) *(Jan 2025 - Present)*
+**Founder** at [Beejho](https://github.com/Beejho) *(Jan 2025 - Present)*
 - Architecting AI-powered restaurant management SaaS platform
 - Built full-stack solution with React, Node.js, PostgreSQL, and AWS Bedrock
 - Conducted 15+ restaurant owner interviews for market validation
@@ -55,7 +55,6 @@ Beejho is revolutionizing how restaurants operate with:
 ![JavaScript](https://img.shields.io/badge/-JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
 ![TypeScript](https://img.shields.io/badge/-TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
 ![Kotlin](https://img.shields.io/badge/-Kotlin-7F52FF?style=flat-square&logo=kotlin&logoColor=white)
-![SQL](https://img.shields.io/badge/-SQL-4479A1?style=flat-square&logo=mysql&logoColor=white)
 
 **Frontend:**
 ![React](https://img.shields.io/badge/-React-61DAFB?style=flat-square&logo=react&logoColor=black)
