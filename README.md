@@ -1,21 +1,21 @@
-# Hi there, I'm Abhishek Choudhary 👋
+# Hi there, I'm Abhishek Choudhary
 
-## 🚀 Founder [@Beejho](https://github.com/Beejho) | Senior Software Engineer
+## Founder [@Beejho](https://github.com/Beejho) | Senior Software Engineer
 
 Currently building **Beejho** - an AI-powered restaurant management platform that helps restaurants optimize operations, increase revenue, and make data-driven decisions.
 
-### 🏢 About Beejho
+### About Beejho
 
 Beejho is revolutionizing how restaurants operate with:
-- 🤖 **AI-Powered Insights**: Leveraging AWS Bedrock for intelligent recommendations
-- 📊 **Smart Analytics**: Real-time inventory tracking and demand forecasting
-- 🎯 **Dual Recommendations**: Personalized menu suggestions for customers + optimization insights for restaurants
-- 🔍 **Semantic Search**: Vector embeddings for natural language menu queries
-- 📈 **Competitive Analysis**: Market intelligence and pricing optimization
+- **AI-Powered Insights**: Leveraging AWS Bedrock for intelligent recommendations
+- **Smart Analytics**: Real-time inventory tracking and demand forecasting
+- **Dual Recommendations**: Personalized menu suggestions for customers + optimization insights for restaurants
+- **Semantic Search**: Vector embeddings for natural language menu queries
+- **Competitive Analysis**: Market intelligence and pricing optimization
 
 **Tech Stack**: React • Node.js • Express • PostgreSQL • AWS Bedrock • Vector Embeddings
 
-🔗 **Early Iterations** (Archived - refactoring for production):
+**Early Iterations** (Archived - refactoring for production):
 - [Beejho-Backend](https://github.com/Beejho/Beejho-Backend) - Initial POC with Node.js/Express + AWS
 - [Beejho-UI](https://github.com/Beejho/Beejho-UI) - First iteration for online menu management
 
@@ -23,15 +23,15 @@ Beejho is revolutionizing how restaurants operate with:
 
 ---
 
-## 💼 Professional Experience
+## Professional Experience
 
-### 🎯 Current
+### Current
 **Founder** at [Beejho](https://github.com/Beejho) *(Jan 2025 - Present)*
 - Architecting AI-powered restaurant management SaaS platform
 - Built full-stack solution with React, Node.js, PostgreSQL, and AWS Bedrock
 - Conducted 15+ restaurant owner interviews for market validation
 
-### 📍 Previous
+### Previous
 **Senior Software Engineer** at Headout *(Mar 2024 - Oct 2024)*
 - Scaled review collection system to 1.5M users with 11.4% increase in submissions
 - Designed WhatsApp Business API integration achieving 7.3% collection rate increase
@@ -49,7 +49,7 @@ Beejho is revolutionizing how restaurants operate with:
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 **Languages:**
 ![JavaScript](https://img.shields.io/badge/-JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
@@ -103,16 +103,16 @@ Beejho is revolutionizing how restaurants operate with:
 
 ---
 
-## 📫 Connect With Me
+## Connect With Me
 
 [![LinkedIn](https://img.shields.io/badge/-LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://linkedin.com/in/av1choudharyy)
 [![Email](https://img.shields.io/badge/-Email-EA4335?style=flat-square&logo=gmail&logoColor=white)](mailto:choudharyabhishek2199@gmail.com)
 
 ---
 
-## 🎯 Current Focus
+## Current Focus
 
-- 🔨 Rebuilding Beejho's architecture for production scalability
-- 📚 Implementing AI recommendation engine with AWS Bedrock
-- 🌱 Developing predictive analytics for inventory and demand forecasting
-- 💡 Scaling from pilot restaurants to wider deployment
+- Rebuilding Beejho's architecture for production scalability
+- Implementing AI recommendation engine with AWS Bedrock
+- Developing predictive analytics for inventory and demand forecasting
+- Scaling from pilot restaurants to wider deployment
