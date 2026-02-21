@@ -8,9 +8,9 @@ Currently building **Aryra** — an AI-powered assistant combining multimodal an
 
 [Aryra](https://aryra.in) is a production AI platform featuring:
 - **Custom ReAct Agent**: 33-tool agent loop (no LangChain/LangGraph), real-time SSE streaming of reasoning and Plotly charts
-- **Provider Abstraction**: Single env var switches entire cloud stack — AWS (S3 + Textract + Bedrock + Transcribe) or GCP (GCS + Cloud Vision + Vertex + Google Transcribe), with per-service overrides. LLM layer supports Anthropic, AWS Bedrock, Google Vertex, OpenAI, and Ollama under a unified interface
+- **Provider Abstraction**: Single env var switches entire cloud stack — AWS (S3 + Textract + Bedrock + Transcribe) or GCP (GCS + Cloud Vision + Vertex + Google Transcribe), with per-service overrides. LLM layer supports Anthropic, AWS Bedrock, Google Vertex AI (Claude + Gemini), OpenAI, and Ollama under a unified interface
 - **Knowledge Bank & HNSW**: pgvector semantic search with HNSW indexing for sub-millisecond nearest-neighbor lookup, HyDE query expansion, auto-caching of every Q&A pair as embeddings for progressive knowledge enrichment
-- **Multimodal Asset Analysis**: Image OCR (Textract or Cloud Vision), PDF page-level extraction with per-page embeddings, Excel chunked processing, audio transcription (AWS or Google), video analysis via native Bedrock video blocks (s3Location, Nova Pro)
+- **Multimodal Asset Analysis**: Image OCR (Textract or Cloud Vision), PDF page-level extraction with per-page embeddings, Excel chunked processing, audio transcription (AWS or Google Cloud Speech), video analysis via native Bedrock video blocks (s3Location, Nova Pro)
 - **Inline Image & Video Generation**: Abstract GenerationProvider (Bedrock, OpenAI DALL-E, Google Imagen) — generate images and videos directly in chat, streamed as file uploads
 - **NL2SQL**: Schema-aware natural language to SQL with automatic schema discovery, TTL-cached metadata, and 20+ injection pattern blocks
 - **File Management & Deduplication**: SHA-256 hash-based deduplication across S3/GCS, proxied downloads, semantic file search, storage lifecycle tiering
@@ -21,7 +21,7 @@ Currently building **Aryra** — an AI-powered assistant combining multimodal an
 - **Sandboxed Python**: subprocess isolation, custom MetaPathFinder blocking 18 dangerous imports, inline Plotly charts, Excel/PDF/PPTX/CSV export
 - **Integrations**: Gmail OAuth (12 tools, multi-account), SearXNG + Crawl4AI web search, Google SSO, persistent per-user memory
 
-**Tech Stack**: Python · FastAPI · React 19 · TanStack Start · React Native/Expo · PostgreSQL/pgvector · Redis · AWS Bedrock · Docker · OpenTelemetry · Grafana
+**Tech Stack**: Python · FastAPI · React 19 · TanStack Start · React Native/Expo · PostgreSQL/pgvector · Redis · AWS Bedrock · GCP Vertex AI · Docker · OpenTelemetry · Grafana
 
 ---
 
@@ -30,7 +30,7 @@ Currently building **Aryra** — an AI-powered assistant combining multimodal an
 ### Current
 
 **Founder** at [Aryra](https://aryra.in) *(Mar 2025 - Present)*
-- Built full agentic AI platform with custom ReAct agent (33 tools), SSE streaming, and multi-LLM routing across Anthropic, Bedrock, Vertex, OpenAI, and Ollama
+- Built full agentic AI platform with custom ReAct agent (33 tools), SSE streaming, and multi-LLM routing across Anthropic, AWS Bedrock, Google Vertex AI (Claude + Gemini), OpenAI, and Ollama
 - Provider abstraction layer — single env var switches entire cloud stack (AWS or GCP) with per-service overrides
 - Self-hosted observability: OTel → Grafana Alloy → Loki + Tempo + Prometheus + Grafana
 - React 19 / TanStack Start SSR frontend with pnpm monorepo, Turborepo, and React Native/Expo mobile app
@@ -77,9 +77,9 @@ Currently building **Aryra** — an AI-powered assistant combining multimodal an
 
 **Frontend:**
 ![React](https://img.shields.io/badge/-React-61DAFB?style=flat-square&logo=react&logoColor=black)
-![Next.js](https://img.shields.io/badge/-Next.js-000000?style=flat-square&logo=next.js&logoColor=white)
+![TanStack](https://img.shields.io/badge/-TanStack_Start-FF4154?style=flat-square&logo=reactquery&logoColor=white)
 ![React_Native](https://img.shields.io/badge/-React_Native-61DAFB?style=flat-square&logo=react&logoColor=black)
-![TanStack](https://img.shields.io/badge/-TanStack-FF4154?style=flat-square&logo=reactquery&logoColor=white)
+![Next.js](https://img.shields.io/badge/-Next.js-000000?style=flat-square&logo=next.js&logoColor=white)
 
 **Backend:**
 ![FastAPI](https://img.shields.io/badge/-FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)
@@ -94,25 +94,31 @@ Currently building **Aryra** — an AI-powered assistant combining multimodal an
 ![MongoDB](https://img.shields.io/badge/-MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white)
 ![DynamoDB](https://img.shields.io/badge/-DynamoDB-4053D6?style=flat-square&logo=amazon-dynamodb&logoColor=white)
 
-**AWS Services:**
+**AWS:**
 ![AWS](https://img.shields.io/badge/-AWS-232F3E?style=flat-square&logo=amazon-aws&logoColor=white)
 ![Bedrock](https://img.shields.io/badge/-Bedrock-FF9900?style=flat-square&logo=amazon-aws&logoColor=white)
 ![Lambda](https://img.shields.io/badge/-Lambda-FF9900?style=flat-square&logo=aws-lambda&logoColor=white)
 ![S3](https://img.shields.io/badge/-S3-569A31?style=flat-square&logo=amazon-s3&logoColor=white)
 ![Textract](https://img.shields.io/badge/-Textract-FF9900?style=flat-square&logo=amazon-aws&logoColor=white)
-![CloudFront](https://img.shields.io/badge/-CloudFront-FF9900?style=flat-square&logo=amazon-aws&logoColor=white)
+
+**GCP:**
+![GCP](https://img.shields.io/badge/-GCP-4285F4?style=flat-square&logo=google-cloud&logoColor=white)
+![Vertex_AI](https://img.shields.io/badge/-Vertex_AI-4285F4?style=flat-square&logo=google-cloud&logoColor=white)
+![Cloud_Vision](https://img.shields.io/badge/-Cloud_Vision-4285F4?style=flat-square&logo=google-cloud&logoColor=white)
+![Cloud_Storage](https://img.shields.io/badge/-Cloud_Storage-4285F4?style=flat-square&logo=google-cloud&logoColor=white)
+
+**AI Providers:**
+![Anthropic](https://img.shields.io/badge/-Anthropic-191919?style=flat-square&logo=anthropic&logoColor=white)
+![OpenAI](https://img.shields.io/badge/-OpenAI-412991?style=flat-square&logo=openai&logoColor=white)
+![Ollama](https://img.shields.io/badge/-Ollama-000000?style=flat-square&logo=ollama&logoColor=white)
 
 **DevOps & Observability:**
 ![Docker](https://img.shields.io/badge/-Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
 ![OpenTelemetry](https://img.shields.io/badge/-OpenTelemetry-000000?style=flat-square&logo=opentelemetry&logoColor=white)
 ![Grafana](https://img.shields.io/badge/-Grafana-F46800?style=flat-square&logo=grafana&logoColor=white)
+![Prometheus](https://img.shields.io/badge/-Prometheus-E6522C?style=flat-square&logo=prometheus&logoColor=white)
 ![Git](https://img.shields.io/badge/-Git-F05032?style=flat-square&logo=git&logoColor=white)
 ![CI/CD](https://img.shields.io/badge/-CI/CD-2088FF?style=flat-square&logo=github-actions&logoColor=white)
-
-**AI/ML:**
-![LangGraph](https://img.shields.io/badge/-LangGraph-1C3C3C?style=flat-square&logo=langchain&logoColor=white)
-![Vector_DB](https://img.shields.io/badge/-Vector_DB-00C7B7?style=flat-square&logo=databricks&logoColor=white)
-![Microservices](https://img.shields.io/badge/-Microservices-2496ED?style=flat-square&logo=docker&logoColor=white)
 
 ---
 
