@@ -2,21 +2,26 @@
 
 ## Founder of [Aryra](https://aryra.in) | Senior Software Engineer
 
-Currently building **Aryra** — an AI-powered assistant combining multimodal analysis, agentic reasoning, semantic search, and sandboxed code execution in a single streaming interface.
+Currently building **Aryra** — an AI-powered assistant combining multimodal analysis, agentic reasoning, semantic search, sandboxed code execution, and inline content generation in a single streaming interface.
 
 ### About Aryra
 
 [Aryra](https://aryra.in) is a production AI platform featuring:
-- **Custom ReAct Agent**: 33-tool agent loop (no LangChain), real-time SSE streaming of reasoning and Plotly charts
-- **Knowledge Bank**: pgvector semantic search, HNSW + Amazon Rerank blended scoring, HyDE query expansion
-- **Multimodal Analysis**: OCR (Textract + Claude Vision), PDFs, audio (Transcribe), video (ffmpeg + Claude Vision), Excel
-- **NL2SQL**: Schema-aware natural language to SQL with injection protection and TTL-cached metadata
-- **Session Sharing & Forking**: Fork any conversation, token-based sharing, real-time SSE notifications
-- **IAM-Style RBAC**: JSON policy documents, deny-wins evaluation, role hierarchy, wildcard resource matching
-- **Sandboxed Python**: subprocess isolation, import guard, inline Plotly charts, Excel/PDF/PPTX export
-- **Integrations**: Gmail OAuth (12 tools), SearXNG + Crawl4AI web search, AI content generation (Bedrock/OpenAI/Google)
+- **Custom ReAct Agent**: 33-tool agent loop (no LangChain/LangGraph), real-time SSE streaming of reasoning and Plotly charts
+- **Provider Abstraction**: Single env var switches entire cloud stack — AWS (S3 + Textract + Bedrock + Transcribe) or GCP (GCS + Cloud Vision + Vertex + Google Transcribe), with per-service overrides. LLM layer supports Anthropic, AWS Bedrock, Google Vertex, OpenAI, and Ollama under a unified interface
+- **Knowledge Bank & HNSW**: pgvector semantic search with HNSW indexing for sub-millisecond nearest-neighbor lookup, HyDE query expansion, auto-caching of every Q&A pair as embeddings for progressive knowledge enrichment
+- **Multimodal Asset Analysis**: Image OCR (Textract or Cloud Vision), PDF page-level extraction with per-page embeddings, Excel chunked processing, audio transcription (AWS or Google), video analysis via native Bedrock video blocks (s3Location, Nova Pro)
+- **Inline Image & Video Generation**: Abstract GenerationProvider (Bedrock, OpenAI DALL-E, Google Imagen) — generate images and videos directly in chat, streamed as file uploads
+- **NL2SQL**: Schema-aware natural language to SQL with automatic schema discovery, TTL-cached metadata, and 20+ injection pattern blocks
+- **File Management & Deduplication**: SHA-256 hash-based deduplication across S3/GCS, proxied downloads, semantic file search, storage lifecycle tiering
+- **Redis Caching**: Abstract CacheBackend (Redis + NullCacheBackend fallback), TTL-aware schema deduplication, semantic query caching
+- **Self-Hosted Observability**: OpenTelemetry (FastAPI + asyncpg instrumented) → Grafana Alloy → Loki (logs) + Tempo (traces) + Prometheus (metrics) + Grafana dashboards
+- **Session Sharing & Forking**: Fork any conversation from any message, token-based sharing, fork chain traversal, bookmarks, real-time SSE notifications
+- **IAM-Style RBAC**: JSON policy documents, deny-wins evaluation, role hierarchy, wildcard resource matching across 8 resource groups
+- **Sandboxed Python**: subprocess isolation, custom MetaPathFinder blocking 18 dangerous imports, inline Plotly charts, Excel/PDF/PPTX/CSV export
+- **Integrations**: Gmail OAuth (12 tools, multi-account), SearXNG + Crawl4AI web search, Google SSO, persistent per-user memory
 
-**Tech Stack**: Python · FastAPI · React 19 · TanStack Start · React Native/Expo · PostgreSQL/pgvector · Redis · AWS Bedrock · Docker
+**Tech Stack**: Python · FastAPI · React 19 · TanStack Start · React Native/Expo · PostgreSQL/pgvector · Redis · AWS Bedrock · Docker · OpenTelemetry · Grafana
 
 ---
 
@@ -25,13 +30,14 @@ Currently building **Aryra** — an AI-powered assistant combining multimodal an
 ### Current
 
 **Founder** at [Aryra](https://aryra.in) *(Mar 2025 - Present)*
-- Built full agentic AI platform with custom ReAct agent (33 tools), SSE streaming, and multi-LLM routing
-- Deployed on Docker Compose with PostgreSQL/pgvector, Redis, SearXNG, Crawl4AI, and Caddy reverse proxy
-- React/TanStack Start SSR frontend with pnpm monorepo, Turborepo, and React Native/Expo mobile app
+- Built full agentic AI platform with custom ReAct agent (33 tools), SSE streaming, and multi-LLM routing across Anthropic, Bedrock, Vertex, OpenAI, and Ollama
+- Provider abstraction layer — single env var switches entire cloud stack (AWS or GCP) with per-service overrides
+- Self-hosted observability: OTel → Grafana Alloy → Loki + Tempo + Prometheus + Grafana
+- React 19 / TanStack Start SSR frontend with pnpm monorepo, Turborepo, and React Native/Expo mobile app
 
 **Senior Software Consultant** at Piping Rock India *(Mar 2025 - Present)*
 - Built hybrid OCR + Vision asset analysis API with AWS Textract + Claude Sonnet 4.5 and Amazon Titan V2 embeddings
-- Designed LangGraph ReAct agent with 16 tools, Nova Embed V2 (3072-dim), and HNSW sub-millisecond search
+- Designed LangGraph ReAct agent with 16 tools and Nova Embed V2 (3072-dim) multimodal embedding pipeline
 - Deployed FastAPI on AWS Lambda via Docker + SAM with 99-file test suite and full audit logging
 
 ### Previous
@@ -50,6 +56,14 @@ Currently building **Aryra** — an AI-powered assistant combining multimodal an
 - Built Warehouse Management System on AWS reducing operational costs by 33%
 - Developed custom ORM and WebSocket microservices
 - Improved application load times by 20% with database connection pooling
+
+---
+
+## Resume
+
+📄 [**Download Latest Resume (PDF)**](https://github.com/av1choudharyy/resume/releases/latest/download/resume.pdf)
+
+*Auto-generated from the [resume repo](https://github.com/av1choudharyy/resume) on every push to main.*
 
 ---
 
@@ -88,8 +102,10 @@ Currently building **Aryra** — an AI-powered assistant combining multimodal an
 ![Textract](https://img.shields.io/badge/-Textract-FF9900?style=flat-square&logo=amazon-aws&logoColor=white)
 ![CloudFront](https://img.shields.io/badge/-CloudFront-FF9900?style=flat-square&logo=amazon-aws&logoColor=white)
 
-**DevOps & Tools:**
+**DevOps & Observability:**
 ![Docker](https://img.shields.io/badge/-Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
+![OpenTelemetry](https://img.shields.io/badge/-OpenTelemetry-000000?style=flat-square&logo=opentelemetry&logoColor=white)
+![Grafana](https://img.shields.io/badge/-Grafana-F46800?style=flat-square&logo=grafana&logoColor=white)
 ![Git](https://img.shields.io/badge/-Git-F05032?style=flat-square&logo=git&logoColor=white)
 ![CI/CD](https://img.shields.io/badge/-CI/CD-2088FF?style=flat-square&logo=github-actions&logoColor=white)
 
@@ -109,6 +125,6 @@ Currently building **Aryra** — an AI-powered assistant combining multimodal an
 
 ## Current Focus
 
-- Expanding Aryra with web search (SearXNG + Crawl4AI), Gmail integration, and AI content generation
-- Improving agent reasoning with multi-LLM routing and persistent memory
 - Scaling Aryra to a wider user base at [aryra.in](https://aryra.in)
+- Expanding provider coverage and fine-tuning multi-LLM routing strategies
+- Growing the knowledge bank with richer graph interlinking and smarter context enrichment
