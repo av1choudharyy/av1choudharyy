@@ -29,7 +29,7 @@ Currently building **Aryra** — an AI-powered assistant combining multimodal an
 
 ### Current
 
-**Founder** at [Aryra](https://aryra.in) *(Mar 2025 - Present)*
+**Founder** at [Aryra](https://aryra.in) *(Jan 2026 - Present)*
 - Built full agentic AI platform with custom ReAct agent (33 tools), SSE streaming, and multi-LLM routing across Anthropic, AWS Bedrock, Google Vertex AI (Claude + Gemini), OpenAI, and Ollama
 - Provider abstraction layer — single env var switches entire cloud stack (AWS or GCP) with per-service overrides
 - Self-hosted observability: OTel → Grafana Alloy → Loki + Tempo + Prometheus + Grafana
