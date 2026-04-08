@@ -2,26 +2,49 @@
 
 ## Founder of [Aryra](https://aryra.in) | Senior Software Engineer
 
-Currently building **Aryra** — an AI-powered assistant combining multimodal analysis, agentic reasoning, semantic search, sandboxed code execution, and inline content generation in a single streaming interface.
+Currently building **Aryra** — an AI assistant that connects to your entire work stack. Chat, research, voice, code execution, file analysis, and 30+ integrations in one place.
+
+---
 
 ### About Aryra
 
-[Aryra](https://aryra.in) is a production AI platform featuring:
-- **Custom ReAct Agent**: 33-tool agent loop (no LangChain/LangGraph), real-time SSE streaming of reasoning and Plotly charts
-- **Provider Abstraction**: Single env var switches entire cloud stack — AWS (S3 + Textract + Bedrock + Transcribe) or GCP (GCS + Cloud Vision + Vertex + Google Transcribe), with per-service overrides. LLM layer supports Anthropic, AWS Bedrock, Google Vertex AI (Claude + Gemini), OpenAI, and Ollama under a unified interface
-- **Knowledge Bank & HNSW**: pgvector semantic search with HNSW indexing for sub-millisecond nearest-neighbor lookup, HyDE query expansion, auto-caching of every Q&A pair as embeddings for progressive knowledge enrichment
-- **Multimodal Asset Analysis**: Image OCR (Textract or Cloud Vision), PDF page-level extraction with per-page embeddings, Excel chunked processing, audio transcription (AWS or Google Cloud Speech), video analysis via native Bedrock video blocks (s3Location, Nova Pro)
-- **Inline Image & Video Generation**: Abstract GenerationProvider (Bedrock, OpenAI DALL-E, Google Imagen) — generate images and videos directly in chat, streamed as file uploads
-- **NL2SQL**: Schema-aware natural language to SQL with automatic schema discovery, TTL-cached metadata, and 20+ injection pattern blocks
-- **File Management & Deduplication**: SHA-256 hash-based deduplication across S3/GCS, proxied downloads, semantic file search, storage lifecycle tiering
-- **Redis Caching**: Abstract CacheBackend (Redis + NullCacheBackend fallback), TTL-aware schema deduplication, semantic query caching
-- **Self-Hosted Observability**: OpenTelemetry (FastAPI + asyncpg instrumented) → Grafana Alloy → Loki (logs) + Tempo (traces) + Prometheus (metrics) + Grafana dashboards
-- **Session Sharing & Forking**: Fork any conversation from any message, token-based sharing, fork chain traversal, bookmarks, real-time SSE notifications
-- **IAM-Style RBAC**: JSON policy documents, deny-wins evaluation, role hierarchy, wildcard resource matching across 8 resource groups
-- **Sandboxed Python**: subprocess isolation, custom MetaPathFinder blocking 18 dangerous imports, inline Plotly charts, Excel/PDF/PPTX/CSV export
-- **Integrations**: Gmail OAuth (12 tools, multi-account), SearXNG + Crawl4AI web search, Google SSO, persistent per-user memory
+[Aryra](https://aryra.in) is an AI assistant built from scratch. Connect your work tools, upload your files, and ask anything — it reads your emails, checks your tickets, reviews pull requests, and searches the web, all from one chat window.
 
-**Tech Stack**: Python · FastAPI · React 19 · TanStack Start · React Native/Expo · PostgreSQL/pgvector · Redis · AWS Bedrock · GCP Vertex AI · Docker · OpenTelemetry · Grafana
+**Chat & Ask**
+Ask anything conversational or task-based. Aryra reasons across your connected tools — searching emails, fetching Jira issues, reading Confluence pages, looking up Slack threads — and responds in one clean answer. Attach files (PDFs, images, spreadsheets, audio, video) and it analyzes them inline.
+
+**Deep Research**
+Give it a research question and it may ask clarifying questions first, then builds a plan, researches each subtopic in parallel, detects contradictions across sources, reviews quality, catches weak sections, and produces a structured report with cited sources. You watch it work in real time — topics update live as each thread completes. The final report is properly structured with an executive summary, sections, cross-cutting insights, and a source list.
+
+**Talk Mode**
+Press the mic and have a natural voice conversation. Aryra detects when you stop speaking automatically — no push-to-talk. It transcribes, thinks, and responds out loud, with each word highlighted as it's spoken. Works for quick questions or extended back-and-forth.
+
+**Connected to your tools**
+Connect once and Aryra can act across your entire stack:
+
+| | |
+|---|---|
+| **Email & Calendar** | Gmail, Google Calendar, Outlook |
+| **Communication** | Slack, Microsoft Teams |
+| **Dev Tools** | GitHub, GitLab, Bitbucket, Jira, Linear |
+| **Docs & Storage** | Confluence, Notion, Google Docs, Google Drive, Google Sheets, OneDrive |
+| **CRM** | Salesforce, HubSpot |
+| **Support** | Zendesk |
+| **Observability** | Datadog, Sentry, PagerDuty |
+| **HR** | BambooHR, Workday, greytHR |
+
+**For teams**
+Organisations get a shared knowledge platform — every connected tool gets indexed, access-controlled, and made searchable. Ask Aryra about a teammate's PR, a Jira sprint, or a Confluence doc — it knows.
+
+**Built on:**
+- Custom agentic loop built from scratch — no LangChain, no LangGraph
+- Provider abstraction — one env var switches between AWS and GCP for the entire cloud stack
+- pgvector semantic search with HNSW indexing
+- Self-hosted observability: OpenTelemetry → Grafana → Loki + Tempo + Prometheus
+
+**Open source tools I've built:**
+- [`bitbucket-mcp`](https://github.com/av1choudharyy/bitbucket-mcp) — MCP server for Bitbucket: list, review, and manage PRs
+- [`mssql-mcp`](https://github.com/av1choudharyy/mssql-mcp) — MCP server for SQL Server (cross-platform SQL auth + Windows auth)
 
 ---
 
@@ -30,19 +53,23 @@ Currently building **Aryra** — an AI-powered assistant combining multimodal an
 ### Current
 
 **Founder** at [Aryra](https://aryra.in) *(Jan 2026 - Present)*
-- Built full agentic AI platform with custom ReAct agent (33 tools), SSE streaming, and multi-LLM routing across Anthropic, AWS Bedrock, Google Vertex AI (Claude + Gemini), OpenAI, and Ollama
+- Designed and shipped the full product solo — from landing page and onboarding to billing, org management, settings, and mobile app — without a design or product team
+- Launched beta with in-app feedback system, Sentry error tracking, feature gating, and plan-based entitlement (daily quotas, org-pooled limits)
+- Built full agentic AI platform with custom ReAct agent, SSE streaming, and multi-LLM routing across Anthropic, AWS Bedrock, Google Vertex AI (Claude + Gemini), OpenAI, and Ollama
 - Provider abstraction layer — single env var switches entire cloud stack (AWS or GCP) with per-service overrides
+- Deep Research engine: parallel topic agents + director review + citation registry produces structured 3K–15K word reports
+- Voice interface: Silero VAD + WebSocket streaming STT + SSML TTS with per-word karaoke highlighting
+- Enterprise knowledge platform: per-org data isolation, Neo4j knowledge graph, Dramatiq async workers, hybrid search with ACL filtering
 - Self-hosted observability: OTel → Grafana Alloy → Loki + Tempo + Prometheus + Grafana
-- React 19 / TanStack Start SSR frontend with pnpm monorepo, Turborepo, and React Native/Expo mobile app
 
 **Senior Software Consultant** at Piping Rock India *(Mar 2025 - Present)*
 - Built hybrid OCR + Vision asset analysis API with AWS Textract + Claude Sonnet 4.5 and Amazon Titan V2 embeddings
-- Designed LangGraph ReAct agent with 16 tools and Nova Embed V2 (3072-dim) multimodal embedding pipeline
-- Deployed FastAPI on AWS Lambda via Docker + SAM with 99-file test suite and full audit logging
+- Designed LangGraph ReAct agent with Nova Embed V2 (3072-dim) multimodal embedding pipeline
+- Deployed FastAPI on AWS Lambda via Docker + SAM with full audit logging
 
 ### Previous
 
-**Senior Software Engineer** at Headout *(Mar 2024 - Oct 2024)*
+**Senior Software Engineer** at Headout *(Mar 2025 - Oct 2025)*
 - Scaled review collection system to 1.5M users with 11.4% increase in submissions
 - Designed WhatsApp Business API integration achieving 7.3% collection rate increase
 - Led full-stack project with Kotlin microservices, Redis caching, and Mixpanel analytics
@@ -93,6 +120,7 @@ Currently building **Aryra** — an AI-powered assistant combining multimodal an
 ![Redis](https://img.shields.io/badge/-Redis-DC382D?style=flat-square&logo=redis&logoColor=white)
 ![MongoDB](https://img.shields.io/badge/-MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white)
 ![DynamoDB](https://img.shields.io/badge/-DynamoDB-4053D6?style=flat-square&logo=amazon-dynamodb&logoColor=white)
+![Neo4j](https://img.shields.io/badge/-Neo4j-008CC1?style=flat-square&logo=neo4j&logoColor=white)
 
 **AWS:**
 ![AWS](https://img.shields.io/badge/-AWS-232F3E?style=flat-square&logo=amazon-aws&logoColor=white)
@@ -131,6 +159,6 @@ Currently building **Aryra** — an AI-powered assistant combining multimodal an
 
 ## Current Focus
 
-- Scaling Aryra to a wider user base at [aryra.in](https://aryra.in)
-- Expanding provider coverage and fine-tuning multi-LLM routing strategies
-- Growing the knowledge bank with richer graph interlinking and smarter context enrichment
+- Running Aryra's beta at [aryra.in](https://aryra.in)
+- Building enterprise knowledge platform — org-connected AI that indexes your entire company
+- Open source MCP servers for developer tooling ([bitbucket-mcp](https://github.com/av1choudharyy/bitbucket-mcp), [mssql-mcp](https://github.com/av1choudharyy/mssql-mcp))
