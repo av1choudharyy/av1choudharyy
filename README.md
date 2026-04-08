@@ -2,7 +2,7 @@
 
 ## Founder of [Aryra](https://aryra.in) | Senior Software Engineer
 
-Currently building **Aryra** — an AI assistant that connects to your entire work stack. Chat, research, voice, code execution, file analysis, and 30+ integrations in one place.
+Currently building **Aryra** — an AI assistant that connects to your entire work stack. Chat, research, voice, code execution, file analysis, and enterprise integrations in one place.
 
 ---
 
