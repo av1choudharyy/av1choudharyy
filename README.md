@@ -1,6 +1,6 @@
 # Hi, I'm Abhishek Choudhary
 
-**Bangalore** | **Building [Aryra](https://aryra.in)** | **Senior Engineer**
+**Bangalore** | **Building [Aryra](https://aryra.ai)** | **Senior Engineer**
 
 ![Python](https://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=python&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/-JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
@@ -42,7 +42,7 @@
 
 ## What I'm Building
 
-### [Aryra](https://aryra.in) — AI assistant for your entire work stack
+### [Aryra](https://aryra.ai) — AI assistant for your entire work stack
 
 Built from scratch — no LangChain, no LangGraph. Connect your work tools, upload your files, and ask anything. It reads your emails, checks your tickets, reviews pull requests, and searches the web — all from one chat window.
 
@@ -83,7 +83,7 @@ Organisations get a shared knowledge platform — every connected tool gets inde
 
 ## What I'm Doing
 
-- Running Aryra's beta at [aryra.in](https://aryra.in)
+- Running Aryra's beta at [aryra.ai](https://aryra.ai)
 - Building an enterprise knowledge platform — org-connected AI that indexes your entire company
 - Shipping open source MCP servers for developer tooling
 
