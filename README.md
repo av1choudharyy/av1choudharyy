@@ -91,9 +91,9 @@ Organisations get a shared knowledge platform — every connected tool gets inde
 
 ## Resume
 
-📄 [**Download Latest Resume (PDF)**](https://github.com/av1choudharyy/resume/releases/latest/download/resume.pdf)
+📄 [**Download Latest Resume (PDF)**](https://raw.githubusercontent.com/av1choudharyy/av1choudharyy/main/resume/resume.pdf)
 
-*Auto-generated from the [resume repo](https://github.com/av1choudharyy/resume) on every push to main.*
+*Generic résumé PDF. Application-specific résumés and source are kept private.*
 
 ---
 
