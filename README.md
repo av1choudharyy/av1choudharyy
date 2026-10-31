@@ -91,9 +91,9 @@ Organisations get a shared knowledge platform — every connected tool gets inde
 
 ## Resume
 
-📄 [**Download Latest Resume (PDF)**](https://raw.githubusercontent.com/av1choudharyy/av1choudharyy/main/resume/resume.pdf)
+📄 [**Download Latest Resume (PDF)**](https://resume.aryra.ai/resume.pdf)
 
-*Generic résumé PDF. Application-specific résumés and source are kept private.*
+*Generic résumé PDF hosted on Cloudflare R2. Application-specific résumés and source are kept private.*
 
 ---
 
